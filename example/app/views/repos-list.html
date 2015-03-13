@@ -1,0 +1,14 @@
+{{#if repos}}
+	{{#each repos}}
+		<div>
+			<h3>
+				<strong><a href="http://github.com/{{full_name}}">{{name}}</a></strong>
+				<span style="font-size:14px;">{{language}}</span>
+			</h3>
+			<p>{{description}}</p>
+			<p>{{stargazers_count}} {{i18n 'github.stars'}} &amp; {{watchers_count}} {{i18n 'github.watchers'}}.</p>
+		</div>
+	{{/each}}
+{{else}}
+	{{i18n 'github.no_repos'}}
+{{/if}}
