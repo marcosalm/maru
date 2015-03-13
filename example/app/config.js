@@ -4,7 +4,7 @@ app.config = {
 	logLevel: 3,
 
 	// Path without trailing slash
-	path: 'http://localhost/zeus',
+	path: 'http://localhost/maru',
 
 	// API server URL (optional)
 	API: 'https://api.github.com',
